@@ -7,9 +7,3 @@ class Owner
     @@all << self
   end
 end
-
-
-
-
-
-  
