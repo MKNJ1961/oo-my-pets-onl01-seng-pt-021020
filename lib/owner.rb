@@ -65,7 +65,7 @@ class Owner
     pets.each{|pet| pet.mood = "nervous"}
     @pets = {}
   end
-end
+
 
   def list_pets
     number_of_dogs = self.dogs.count
