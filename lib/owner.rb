@@ -20,7 +20,7 @@ class Owner
     "I am a human."
   end
 
-  
+
 
   def name
     @name
