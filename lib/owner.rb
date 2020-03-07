@@ -4,7 +4,11 @@ class Owner
   attr_accessor :pets
   #Instance Methods
 
-  @@owners = []
+  @@all =[]
+
+  def self.all
+    @@all
+  end
 
   def initialize(name, species="human")
     @name = name
@@ -16,9 +20,7 @@ class Owner
     "I am a human."
   end
 
-  def self.all
-    @@all
-  end
+  
 
   def name
     @name
