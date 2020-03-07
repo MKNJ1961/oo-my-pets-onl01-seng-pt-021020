@@ -4,11 +4,19 @@ class Cat
 
   @@all = []
 
+  #Instance Methods
+
   def initialize(name, owner)
     @name = name
     @mood = "nervous"
     @owner = owner
     owner.cats << self
+  end
+
+  #Class Methods
+
+  def slef.all
+    @@all 
   end
 
 end
