@@ -1,7 +1,7 @@
 class Owner
 
   attr_reader :species
- attr_accessor :mood, :name, :pets
+  attr_accessor :pets, :owner, :name
   #Instance Methods
 
   @@all = []
@@ -16,9 +16,8 @@ class Owner
 
   def initialize(name, species="human")
     @name = name
-    @pets = {cats: [], dogs: []}
     @species = species
-    @@owner << self
+    @owner << self
   end
 
   def say_species
