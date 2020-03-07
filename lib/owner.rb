@@ -20,7 +20,7 @@ class Owner
   def initialize(name, owner, species="human")
     @name = name
     @species = species
-    @@owner << self
+    @owner << self
   end
 
   def say_species
