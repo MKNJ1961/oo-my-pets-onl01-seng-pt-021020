@@ -1,7 +1,7 @@
 class Owner
 
-  attr_reader :species
-  attr_accessor :pets, :owner
+  attr_reader :species, :owner
+  attr_accessor :pets
   #Instance Methods
 
   @@all = []
