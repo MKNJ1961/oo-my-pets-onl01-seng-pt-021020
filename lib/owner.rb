@@ -26,7 +26,6 @@ class Owner
 
   def self.count
     self.all.length
-
   end
 
 
