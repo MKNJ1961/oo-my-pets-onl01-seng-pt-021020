@@ -23,5 +23,9 @@ class Owner
     @@all << self
   end
 
+  def say_species
+    return "I am human."
+  end
+
 
 end
