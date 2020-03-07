@@ -1,6 +1,7 @@
 class Owner
   attr_accessor :cats, :dogs
   attr_reader :species, :name
+  
   @@all =[]
 
   def initialize(name)
@@ -9,6 +10,10 @@ class Owner
     @@all << self
     @cats = []
     @dogs = []
+  end
+
+  def say_species
+    return "I am a human."
   end
 
 
