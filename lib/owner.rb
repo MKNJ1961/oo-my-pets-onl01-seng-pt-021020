@@ -60,7 +60,7 @@ class Owner
   #     dog.mood = "nervous"
   # end
 def sell_pets
-  @@owner
+  @owner
 end
 
   def list_pets
