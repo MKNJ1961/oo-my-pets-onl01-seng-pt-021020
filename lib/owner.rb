@@ -4,6 +4,8 @@ class Owner
 
   @@all =[]
 
+  #Instance Methods
+
   def initialize(name)
     @name = name
     @species = "human"
@@ -15,6 +17,13 @@ class Owner
   def say_species
     return "I am a human."
   end
+
+  #Class Methods
+
+  def self.all 
+    @@all
+  end
+  
 
 
 
