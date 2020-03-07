@@ -1,11 +1,10 @@
 class Owner
-  attr_accessor :name
-
-
+  attr_accessor :name, :pets
   #Instance Methods
 
-  def initialize(name)
+  def initialize(name, pets)
     @name = name
+    @pets = pets
   end
 
   def name
@@ -13,5 +12,5 @@ class Owner
   end
 
 
-  # code goes here
+
 end
