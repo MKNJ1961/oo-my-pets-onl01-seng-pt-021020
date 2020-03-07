@@ -6,13 +6,13 @@ class Owner
     @@all
   end
 
-  def self.reset_all
-    @@all.clear
-  end
+  # def self.reset_all
+  #   @@all.clear
+  # end
 
-  def self.count
-    @@all.length
-  end
+  # def self.count
+  #   @@all.length
+  # end
 
   attr_reader :species
   attr_accessor :mood, :name, :pets
@@ -20,7 +20,7 @@ class Owner
   def initialize(name, species="human")
     @name = name
     @species = species
-    @@all << self
+    @all << self
   end
 
 
