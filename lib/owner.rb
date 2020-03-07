@@ -29,7 +29,7 @@ class Owner
   def self.count
     self.all.length
   end
-  
+
   def buy_cat(name)
     Cat.new(name, self)
   end
@@ -52,7 +52,7 @@ class Owner
   #     cat.owner = nil
   #     cat.mood = "nervous"
   # end
-  # 
+  #
   # def sell_pets
   #   self.dogs.each do |dog|
   #     self.dogs.delete(dog)
