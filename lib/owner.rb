@@ -9,7 +9,7 @@ class Owner
   attr_reader :species
   attr_accessor  :name, :pets
 
-  def initialize(name, species="human")
+  def initialize(name, species="human", owner)
     @name = name
     @species = species
     @self = owner
