@@ -20,10 +20,10 @@ class Owner
 
   #Class Methods
 
-  def self.all 
+  def self.all
     @@all
   end
-  
+
 
 
 
