@@ -59,8 +59,9 @@ class Owner
       dog.owner = nil
       dog.mood = "nervous"
   end
+  
 def sell_pets
-  @owner
+  self.sell_pets
 end
 
   def list_pets
