@@ -16,7 +16,7 @@ class Cat
   #Class Methods
 
   def slef.all
-    @@all 
+    @@all
   end
 
 end
