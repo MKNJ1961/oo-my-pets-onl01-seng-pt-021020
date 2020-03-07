@@ -18,7 +18,7 @@ class Owner
     @name = name
     @pets = {cats: [], dogs: []}
     @species = species
-    @@all << self
+    @@owner << self
   end
 
   def say_species
