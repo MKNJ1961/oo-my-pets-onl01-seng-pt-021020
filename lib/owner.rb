@@ -76,7 +76,7 @@ class Owner
     "I have #{number_of_dogs} dog(s), and #{number_of_cats} cat(s)."
   end
 
-#   # def self.reset_all
-#   #   self.all.clear
-#   # end
-# end
+  # def self.reset_all
+  #   self.all.clear
+  # end
+end
