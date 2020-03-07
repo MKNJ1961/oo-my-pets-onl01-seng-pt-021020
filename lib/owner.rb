@@ -65,7 +65,7 @@ class Owner
     number_of_cats = self.cats.count
     "I have #{number_of_dogs} dog(s), and #{number_of_cats} cat(s)."
   end
-  
+
   def self.reset_all
     self.all.clear
   end
