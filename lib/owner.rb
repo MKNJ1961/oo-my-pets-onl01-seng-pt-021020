@@ -60,9 +60,6 @@ class Owner
   #     dog.mood = "nervous"
   # end
 
-def
-  @owner = sell_pets
-end
 
   def list_pets
     number_of_dogs = self.dogs.count
