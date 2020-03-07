@@ -8,4 +8,8 @@ class Owner
     @name = name
     @all << self
   end
+
+  def name(name)
+    @name 
+  end
 end
