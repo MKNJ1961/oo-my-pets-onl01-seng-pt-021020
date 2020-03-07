@@ -1,4 +1,4 @@
-require 'pry'
+
 
 class Owner
   attr_accessor :cats, :dogs
@@ -29,8 +29,7 @@ class Owner
   def self.count
     self.all.length
   end
-
-
+  
   def buy_cat(name)
     Cat.new(name, self)
   end
@@ -46,20 +45,20 @@ class Owner
   def feed_cats
     self.cats.each {|cat| cat.mood = "happy"}
   end
-binding.pry
-  def sell_pets
-    self.cats.each do |cat|
-      self.cats.delete(cat)
-      cat.owner = nil
-      cat.mood = "nervous"
-    end
 
-  def sell_pets
-    self.dogs.each do |dog|
-      self.dogs.delete(dog)
-      dog.owner = nil
-      dog.mood = "nervous"
-  end
+  # def sell_pets
+  #   self.cats.each do |cat|
+  #     self.cats.delete(cat)
+  #     cat.owner = nil
+  #     cat.mood = "nervous"
+  # end
+  # 
+  # def sell_pets
+  #   self.dogs.each do |dog|
+  #     self.dogs.delete(dog)
+  #     dog.owner = nil
+  #     dog.mood = "nervous"
+  # end
 
   def list_pets
     number_of_dogs = self.dogs.count
