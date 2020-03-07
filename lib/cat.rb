@@ -15,7 +15,7 @@ class Cat
 
   #Class Methods
 
-  def slef.all
+  def self.all
     @@all
   end
 
