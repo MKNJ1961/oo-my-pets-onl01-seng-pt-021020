@@ -4,7 +4,7 @@ class Owner
   attr_accessor :pets, :owner
   #Instance Methods
 
-  @@all = []
+  # @@all = []
 
   def self.all
     @@all
