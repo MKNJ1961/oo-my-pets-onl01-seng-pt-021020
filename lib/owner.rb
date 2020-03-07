@@ -1,6 +1,6 @@
 class Owner
 
-  attr_reader :species, :owner
+  attr_reader :species, :owner, :name
   attr_accessor :pets
   #Instance Methods
 
