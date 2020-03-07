@@ -46,7 +46,7 @@ class Owner
   def feed_cats
     self.cats.each {|cat| cat.mood = "happy"}
   end
-
+binding.pry
   def sell_pets
     self.cats.each do |cat|
       self.cats.delete(cat)
