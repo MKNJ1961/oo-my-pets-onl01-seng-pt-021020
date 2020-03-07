@@ -8,8 +8,12 @@ class Owner
     @name = name
     @@all << self
   end
-
-  def name
-    @name
+  def self.all
+    @@all
   end
+
+  def self.reset_all
+    @@all.clear
+  end
+  
 end
