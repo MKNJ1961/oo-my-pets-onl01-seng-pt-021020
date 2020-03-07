@@ -10,6 +10,10 @@ class Owner
     @@all
   end
 
+  def self.reset_all
+    @@all.clear 
+  end 
+  
   def initialize(name, species="human")
     @name = name
     @species = species
