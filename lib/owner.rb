@@ -1,17 +1,27 @@
+
+
 class Owner
-  @@all= []
-  attr_accessor :name, :pets
+
+  @@all = []
+
+  def self.all
+    @@all
+  end
+
+  def self.reset_all
+    @@all.clear
+  end
+
+  def self.count
+    @@all.length
+  end
+
   attr_reader :species
+  attr_accessor :mood, :name, :pets
 
-  # Instance Methods #
-
-  def initialize(species)
+  def initialize(name, species="human")
+    @name = name
+    # @pets = {fishes: [], cats: [], dogs: []}
     @species = species
     @@all << self
-    # @pets = {:dogs => [], :cats => []}
   end
-
-  def say_species
-    return "I am a #{@species}."
-  end
-end
