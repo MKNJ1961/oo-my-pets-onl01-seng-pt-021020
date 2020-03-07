@@ -1,19 +1,19 @@
 class Owner
 
   attr_reader :species
-  attr_accessor :pets
+  attr_accessor :pets, :owner
   #Instance Methods
 
-  # @@all = []
+  @@all = []
 
   def self.all
     @@all
   end
 
   def self.reset_all
-    @@all.clear
-  end
-
+    @@all.clear 
+  end 
+  
   def initialize(name, species="human")
     @name = name
     @species = species
@@ -26,9 +26,9 @@ class Owner
 
 
 
-  # def name
-  #   @name
-  # end
+  def name
+    @name
+  end
 
 
 
