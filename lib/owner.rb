@@ -14,6 +14,7 @@ class Owner
     @@all << self
     @cats = []
     @dogs = []
+    @owner = sell_pets
   end
 
   def say_species
