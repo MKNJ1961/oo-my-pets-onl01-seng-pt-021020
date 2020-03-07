@@ -60,6 +60,13 @@ class Owner
   #     dog.mood = "nervous"
   # end
 
+  def sell_pets
+  @pets.each do |types, pets|
+    pets.each{|pet| pet.mood = "nervous"}
+    @pets = {}
+  end
+end
+
   def list_pets
     number_of_dogs = self.dogs.count
     number_of_cats = self.cats.count
