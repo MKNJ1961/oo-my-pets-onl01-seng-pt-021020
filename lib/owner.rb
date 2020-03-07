@@ -47,14 +47,7 @@ class Owner
   end
 
 
-  def sell_pets
-      pets.each do |pet|
-        # arr.map do |pet|
-          pet.mood = 'nervous'
-        end
-        arr.clear
-      end
-    end
+
   # def sell_pets
   #   self.cats.each do |cat|
   #     self.cats.delete(cat)
