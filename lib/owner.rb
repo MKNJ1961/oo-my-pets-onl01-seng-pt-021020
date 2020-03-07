@@ -68,11 +68,11 @@ class Owner
   #     dog.owner = nil
   #     dog.mood = "nervous"
   # end
-  def sell_pets 
-      @pets[:dogs].each do |dogs| 
+  def sell_pets
+      @pets[:dogs].each do |dogs|
         mood = "happy"
-      end 
-    end 
+      end
+    end
 
   def list_pets
     number_of_dogs = self.dogs.count
