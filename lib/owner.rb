@@ -10,9 +10,12 @@ class Owner
     @name = name
     @species = species
     @@owners << self
-
   end
 
+  def say_species
+    "I am a #{@species}"
+  end
+  
   def name
     @name
   end
