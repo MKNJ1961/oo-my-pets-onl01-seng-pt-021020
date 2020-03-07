@@ -61,7 +61,7 @@ class Owner
   # end
 
 def sell_pets
-  self.sell_pets
+  @owner = sell_pets
 end
 
   def list_pets
