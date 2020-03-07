@@ -6,14 +6,6 @@ class Owner
     @@all
   end
 
-  # def self.reset_all
-  #   @@all.clear
-  # end
-
-  # def self.count
-  #   @@all.length
-  # end
-
   attr_reader :species
   attr_accessor  :name, :pets
 
@@ -21,6 +13,10 @@ class Owner
     @name = name
     @species = species
     @owner << self
+  end
+
+  def name(name)
+    @name
   end
 
   def say_species
