@@ -1,13 +1,7 @@
 class Owner
 
-  @@al = []
-  attr_accessor :name, :pets
-  attr_reader :species
+  @@all = []
 
-  def initialize(name)
-    @name = name
-    @@all << self
-  end
   def self.all
     @@all
   end
@@ -15,5 +9,13 @@ class Owner
   def self.reset_all
     @@all.clear
   end
+
+  def self.count
+    @@all.length
+  end
+
+  attr_reader :species
+  attr_accessor :mood, :name, :pets
+
 
 end
