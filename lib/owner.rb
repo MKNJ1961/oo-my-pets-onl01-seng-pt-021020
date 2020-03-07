@@ -54,8 +54,8 @@ class Owner
   # end
   #
   def sell_pets
-    self.dogs.each  {|dogs| dog.mood = "nervous"}
-      self.dogs.delete(dogs)
+    self.dogs.each  {|dog| dog.mood = "nervous"}
+      self.dog.delete(dog)
       dog.owner = nil
       # dog.mood = "happy"
   end
