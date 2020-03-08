@@ -1,5 +1,4 @@
-
-
+require 'pry'
 class Owner
   attr_accessor :cats, :dogs
   attr_reader :species, :name
@@ -46,21 +45,22 @@ class Owner
     self.cats.each {|cat| cat.mood = "happy"}
   end
 
-  # def sell_pets
-  #   self.cats.each do |cat|
-  #     self.cats.delete(cat)
-  #     cat.owner = nil
-  #     cat.mood = "nervous"
-  #   end
-  # end
+binding.pry
+  def sell_pets
+    self.cats.each do |cat|
+      self.cats.delete(cat)
+      cat.owner = nil
+      cat.mood = "nervous"
+    end
+  end
 
-  # def sell_pets
-  #   self.dogs.each do |dog|
-  #     self.dogs.delete(dog)
-  #     dog.owner = nil
-  #     dog.mood = "nervous"
-  #   end
-  # end
+  def sell_pets
+    self.dogs.each do |dog|
+      self.dogs.delete(dog)
+      dog.owner = nil
+      dog.mood = "nervous"
+    end
+  end
 
 
 
