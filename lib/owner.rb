@@ -47,33 +47,18 @@ class Owner
   end
 
   def sell_pets
-    @owner.collect do |species|
-      instances.each do |pet|
-        pet.mood = "nervous"
-      end
-      instances.clear
-    end
+    self.cats.each do |cat|
+      self.cats.delete(cat)
+      cat.owner = nil
+      cat.mood = "nervous"
   end
-
-  # def sell_pets
-  #   self.cats.each do |cat|
-  #     self.cats.delete(cat)
-  #     cat.owner = nil
-  #     cat.mood = "nervous"
-  # end
-  #
-  # def sell_pets
-  #   self.dogs.each do |dog|
-  #     self.dogs.delete(dog)
-  #     dog.owner = nil
-  #     dog.mood = "nervous"
-  # end
+  
   def sell_pets
-      @pets[:dogs].each do |dog|
-        mood = "nervous"
-
-      end
-    end
+    self.dogs.each do |dog|
+      self.dogs.delete(dog)
+      dog.owner = nil
+      dog.mood = "nervous"
+  end
 
   def list_pets
     number_of_dogs = self.dogs.count
