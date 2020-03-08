@@ -47,7 +47,7 @@ class Owner
 
 
   def sell_pets
-    
+
     self.species.each do |pet|
       binding.pry
     self.species.delete(pets)
