@@ -45,14 +45,6 @@ class Owner
     self.cats.each {|cat| cat.mood = "happy"}
   end
 
-  def sell_pets
-    @pets.collect do |species|
-    instances.each do |pet|
-      pet.mood = nervous
-    end
-    instances.clear
-  end
-
   # def sell_pets
   #   binding.pry
   #   self.cats.each do |cat|
