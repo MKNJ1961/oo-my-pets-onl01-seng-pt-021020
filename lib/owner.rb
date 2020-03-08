@@ -50,6 +50,7 @@ class Owner
     self.each do |pet|
       pet.mood = nervous
     end
+    instances.clear
   end
 
   # def sell_pets
