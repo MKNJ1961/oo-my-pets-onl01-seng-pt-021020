@@ -45,9 +45,10 @@ class Owner
     self.cats.each {|cat| cat.mood = "happy"}
   end
 
-binding.pry
+
   def sell_pets
     self.cats.each do |cat|
+      binding.pry
       self.cats.delete(cat)
       cat.owner = nil
       cat.mood = "nervous"
