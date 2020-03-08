@@ -51,6 +51,7 @@ class Owner
     self.cats.delete(cat)
       cat.owner = nil
       cat.mood = "nervous"
+    end
   end
 
 
@@ -60,9 +61,6 @@ class Owner
       dog.owner = nil
       dog.mood = "nervous"
   end
-
-
-
 
   def list_pets
     number_of_dogs = self.dogs.count
