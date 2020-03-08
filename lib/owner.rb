@@ -15,12 +15,6 @@ class Owner
     @dogs = []
   end
 
-  def say_species
-    return "I am a human."
-  end
-
-  #Class Methods
-
   def self.all
     @@all
   end
@@ -29,7 +23,13 @@ class Owner
     self.all.length
   end
 
-  def buy_cat(name)
+  def say_species
+    return "I am a human."
+  end
+
+  #Class Methods
+
+    def buy_cat(name)
     Cat.new(name, self)
   end
 
