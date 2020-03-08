@@ -62,6 +62,11 @@ class Owner
   #   end
   # end
 
+def sell_pets
+  [fido, tabby].each {|o| o.mood = "happy" }
+end
+
+
   def list_pets
     number_of_dogs = self.dogs.count
     number_of_cats = self.cats.count
