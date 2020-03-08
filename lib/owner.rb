@@ -54,7 +54,7 @@ class Owner
         #name_array.delete(pet)
       end
     end
-    @pets = {}
+    # @pets = {}
   end
   # def sell_pets
   #   self.cats.each do |cat|
