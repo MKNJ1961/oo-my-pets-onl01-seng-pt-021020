@@ -62,9 +62,7 @@ class Owner
   #   end
   # end
 
-def sell_pets
-  [fido, tabby].each {|o| o.mood = "happy" }
-end
+
 
 
   def list_pets
