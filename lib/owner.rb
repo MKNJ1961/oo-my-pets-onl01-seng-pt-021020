@@ -45,15 +45,21 @@ class Owner
     self.cats.each {|cat| cat.mood = "happy"}
   end
 
-
   def sell_pets
-    binding.pry
-    self.cats.each do |cat|
-    self.cats.delete(cat)
-      cat.owner = nil
-      cat.mood = "nervous"
+    @pets.collect do |pets|
+    self.each do |pet|
+      pet.mood = nervous
     end
   end
+      
+  # def sell_pets
+  #   binding.pry
+  #   self.cats.each do |cat|
+  #   self.cats.delete(cat)
+  #     cat.owner = nil
+  #     cat.mood = "nervous"
+  #   end
+  # end
 
 
   # def sell_pets
