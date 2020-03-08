@@ -51,7 +51,7 @@ class Owner
       pet.mood = nervous
     end
   end
-      
+
   # def sell_pets
   #   binding.pry
   #   self.cats.each do |cat|
