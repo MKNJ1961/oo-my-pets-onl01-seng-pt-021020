@@ -52,6 +52,11 @@ def sell_pets
     sell_pet(pet)
   end
 
+  def sell_pet(pet)
+    pet.owner = nil
+    pet.mood = nervous
+  end
+
   # def sell_pets
   #   self.cats.each do |cat|
   #     self.cats.delete(cat)
